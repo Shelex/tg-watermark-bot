@@ -1,6 +1,8 @@
 package env
 
 import (
+	"log"
+
 	"github.com/spf13/viper"
 )
 
@@ -19,7 +21,7 @@ func ReadEnv() *Config {
 	viper.AddConfigPath(".")
 	viper.SetConfigFile("config.env")
 	if err := viper.ReadInConfig(); err != nil {
-		panic(err)
+		log.Printf("failed to read config file: %s", err)
 	}
 
 	viper.SetDefault("ENVIRONMENT", "dev")
