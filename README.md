@@ -3,7 +3,7 @@
 Simple-stupid telegram bot that can use watermark image overlay over video input with ffmpeg.  
 Uses long-polling, which is not ideal (webhook would be better), but just works.  
 Supports localization: Ukrainian (uk) and English (en), could be configured via `config.env` file or env variables (with `BOT_` prefix).  
-Working example: [@odarka_watermarka_bot](https://t.me/odarka_watermarka_bot)
+~~Working example: [@odarka_watermarka_bot](https://t.me/odarka_watermarka_bot)~~
 
 # Requirements
 
